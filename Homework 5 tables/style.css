@@ -1,0 +1,26 @@
+td {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.aqua::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aqua span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-weight: bolder;
+}
